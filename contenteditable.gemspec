@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Contenteditable::VERSION
   s.authors     = ["Michael Makarov"]
   s.email       = ["info1117@gmail.com"]
-  s.homepage    = "coshx.com"
+  s.homepage    = "http://coshx.com"
   s.summary     = "Gem that makes it easy to maintain the content"
   s.description = "Gem that makes it easy to maintain the content."
 
