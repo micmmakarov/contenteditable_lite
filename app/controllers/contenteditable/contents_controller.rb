@@ -93,30 +93,31 @@ module Contenteditable
         format.json { head :no_content }
       end
     end
-  end
 
-  def content_update
 
-    params[:data].each do |p|
-      html_value = p[1]
-      c = Content.find_by_action(p[0])
-      if c.blank?
-        Content.new(:action => p[0], :value => html_value).save!
-        message = "created!"
-      else
-        c.update_attributes(:value => html_value)
-        message = "Updated!"
+    def content_update
+
+      params[:data].each do |p|
+        html_value = p[1]
+        c = Content.find_by_key(p[0])
+        if c.blank?
+          Content.new(:key => p[0], :value => html_value).save!
+          message = "created!"
+        else
+          c.update_attributes(:value => html_value)
+          message = "Updated!"
+        end
+
+      end
+
+      respond_to do |format|
+        format.html { redirect_to contents_url }
+        format.json { head :no_content }
+        format.js
       end
 
     end
-    expire_page :controller => :home, :action => :services
-
-    respond_to do |format|
-      format.html { redirect_to contents_url }
-      format.json { head :no_content }
-    end
 
   end
-
 
 end
