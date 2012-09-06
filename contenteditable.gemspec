@@ -7,11 +7,11 @@ require "contenteditable/version"
 Gem::Specification.new do |s|
   s.name        = "contenteditable"
   s.version     = Contenteditable::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Contenteditable."
-  s.description = "TODO: Description of Contenteditable."
+  s.authors     = ["Michael Makarov"]
+  s.email       = ["info1117@gmail.com"]
+  s.homepage    = "coshx.com"
+  s.summary     = "Gem that makes it easy to maintain the content"
+  s.description = "Gem that makes it easy to maintain the content."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
