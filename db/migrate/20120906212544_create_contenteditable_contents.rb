@@ -1,6 +1,6 @@
-class CreateContenteditableContents < ActiveRecord::Migration
+class CreateTranslations < ActiveRecord::Migration
   def change
-    create_table :contenteditable_contents do |t|
+    create_table :translations do |t|
       t.string :key
       t.text :value
 
