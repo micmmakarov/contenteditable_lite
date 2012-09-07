@@ -1,4 +1,5 @@
-jQuery ->
+$("document").ready ->
+
   $('[contenteditable]')
     .live 'focus', ->
       $this = $(this)

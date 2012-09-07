@@ -2,6 +2,16 @@ require_dependency "contenteditable/application_controller"
 
 module Contenteditable
   class ContentsController < ApplicationController
+
+
+    before_filter :filter_for_ce
+
+    def filter_for_ce
+      #include ActionView::Helpers::check_filter
+      #check_filter
+       ::ApplicationController.subclasses.first.new.hello_world
+    end
+
     # GET /contents
     # GET /contents.json
     def index
