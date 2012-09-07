@@ -25,7 +25,7 @@ rake db:migrate
 ### Setup views 
 
 To the head of layouts/application view: <%=  contenteditable_assets %>
-after <body> tag: <%= save_button %>
+after BODY tag: <%= save_button %>
 
 
 
