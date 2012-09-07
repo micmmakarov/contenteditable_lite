@@ -1,9 +1,9 @@
 ## Contenteditable
 
 
-Contenteditable helps to integrate easy CRM system to provide client an opportunity editing content on a website.
+Contenteditable helps to integrate an easy CRM system to provide a client an opportunity editing content on a website.
 
-* This is lite version, it's easy connectable to an app
+* This is a lite version, it's easy connectable to an app
 * Generates a table to keep the data
 * Uses contenteditable HTML5 tag
 
