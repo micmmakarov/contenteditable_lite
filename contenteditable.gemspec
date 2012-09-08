@@ -7,7 +7,7 @@ require "contenteditable/version"
 Gem::Specification.new do |s|
   s.name        = "contenteditable"
   s.version     = Contenteditable::VERSION
-  s.authors     = ["Michael Makarov"]
+  s.authors     = ["Michael Makarov, Gabe Kopley"]
   s.email       = ["info1117@gmail.com"]
   s.homepage    = "http://coshx.com"
   s.summary     = "Gem that makes it easy to maintain the content"

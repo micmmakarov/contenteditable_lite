@@ -22,6 +22,13 @@ rake contenteditable:install:migrations
 
 rake db:migrate
 
+### Add routes
+
+Add to routes.rb:
+
+mount Contenteditable::Engine => "/contenteditable"
+
+
 ### Setup views 
 
 To the head of layouts/application view: <%=  contenteditable_assets %>
