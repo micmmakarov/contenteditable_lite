@@ -16,8 +16,9 @@ $("document").ready ->
     c = $("[contenteditable]")
     data1 = {}
     c.each -> data1[$(this).attr('data-tag')] = $(this).text()
-    $.post(
-      "/contenteditable/content_update"
-      {title: 'Save_data', data: data1}
-      -> $(".contenteditable_save_button").fadeOut(1500)
+    $.ajax(
+      type: "PUT",
+      url: "/contenteditable/update",
+      data: {translations: data1},
+      success: -> $(".contenteditable_save_button").fadeOut(1500)
     )

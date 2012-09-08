@@ -18,7 +18,7 @@ bundle install
 
 ### Generate table
 
-rails install:contenteditable:migrations
+rake contenteditable:install:migrations
 
 rake db:migrate
 
