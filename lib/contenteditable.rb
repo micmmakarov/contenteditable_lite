@@ -11,10 +11,8 @@ module Contenteditable
   end
 end
 
-
 module Filtering
   module Foradmins
-
 
     def self.included(base)
       base.extend ControllerMethods
@@ -22,15 +20,10 @@ module Filtering
 
     module ControllerMethods
       def contenteditable_filter(*args)
-
         Contenteditable::Engine.ce_filter = args[0] if args.size > 0
-
-
       end
-
     end
-
-    end
+  end
 end
 
 ActionController::Base.send(:include, Filtering::Foradmins)

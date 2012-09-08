@@ -1,4 +1,4 @@
-class CreateTranslations < ActiveRecord::Migration
+class CreateContenteditableTranslations < ActiveRecord::Migration
   def change
     create_table :translations do |t|
       t.string :key

@@ -5,7 +5,7 @@
 
 .contenteditable_save_button {
 
-    position:absolute;
+    position:fixed;
     right:10px;
     top:10px;
     height:100px;
