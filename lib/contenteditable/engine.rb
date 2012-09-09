@@ -11,18 +11,12 @@ module Contenteditable
       end
     end
 
+
+
     # Check the gem config
     initializer "check config" do |app|
       # make sure mount_at ends with trailing slash
       config.mount_at += '/'  unless config.mount_at.last == '/'
-    end
-
-    initializer :flash_cookie do |config|
-      config.middleware.insert_after(
-          'ActionDispatch::Cookies',
-          Contenteditable::Middleware::FlashSessionCookie,
-          ::Rails.configuration.session_options[:key]
-      )
     end
 
 
