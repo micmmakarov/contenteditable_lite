@@ -15,7 +15,7 @@ module Contenteditable
     def contenteditable_assets
       if is_authorized?
         a=javascript_include_tag "contenteditable/contenteditable"
-        b=stylesheet_link_tag    "contenteditable/contents", :media => "all"
+        b=stylesheet_link_tag    "contenteditable/contenteditable", :media => "all"
         c = a + b
         c
       end
