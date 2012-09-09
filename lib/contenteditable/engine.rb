@@ -12,7 +12,6 @@ module Contenteditable
     end
 
 
-
     # Check the gem config
     initializer "check config" do |app|
       # make sure mount_at ends with trailing slash

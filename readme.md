@@ -28,12 +28,20 @@ Add to routes.rb:
 
 mount Contenteditable::Engine => "/contenteditable"
 
+### Assets
+
+ In application.js add this:
+ //= require contenteditable/contenteditable
+
+ In application.css:
+
+ *= require contenteditable/contenteditable
+
+
 
 ### Setup views 
 
-To the head of layouts/application view: <%=  contenteditable_assets %>
 after BODY tag: <%= save_button %>
-
 
 
 In the view, where it's supposed to be contenteditable
