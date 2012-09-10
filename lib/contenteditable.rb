@@ -27,3 +27,7 @@ module Filtering
 end
 
 ActionController::Base.send(:include, Filtering::Foradmins)
+
+if defined?(Rails)
+  require "contenteditable/generators/install_generator"
+end
