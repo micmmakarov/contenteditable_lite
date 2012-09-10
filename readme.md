@@ -24,11 +24,12 @@ rails generate contenteditable:install
 
 rake db:migrate
 
+## Use
 
-### Use in views
+### Use simple tags in views
 
-after BODY tag add: <%= save_button %>
-or use "contenteditable_save_button" class if you want to make a button yourself
+after BODY tag add: <%= save_button %> to use build-in save button
+or alternatively use "contenteditable_save_button" class if you want to make a button on your own
 
 
 In the view, where it's supposed to be contenteditable
@@ -38,7 +39,7 @@ or
 
 <%= ceditable("title", "h1", {:class => 'green'}) %>
 
-
+where "title" should be a unique key, for example "front page tagline" or "about description"
  
 ### Configure access
 
