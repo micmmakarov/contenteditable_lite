@@ -18,30 +18,16 @@ bundle install
 
 ### Generate table
 
-rake contenteditable:install:migrations
-
 rake db:migrate
 
-### Add routes
+### Run install script
 
-Add to routes.rb:
+rails generate contenteditable:install
 
-mount Contenteditable::Engine => "/contenteditable"
+### Use in views
 
-### Assets
-
- In application.js add this:
- //= require contenteditable/contenteditable
-
- In application.css:
-
- *= require contenteditable/contenteditable
-
-
-
-### Setup views 
-
-after BODY tag: <%= save_button %>
+after BODY tag add: <%= save_button %>
+or use "contenteditable_save_button" class if you want to make a button yourself
 
 
 In the view, where it's supposed to be contenteditable
