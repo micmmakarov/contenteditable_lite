@@ -16,13 +16,14 @@ gem "contenteditable", :github => 'micmmakarov/contenteditable_lite'
 
 bundle install
 
+### Run install script
+
+rails generate contenteditable:install
+
 ### Generate table
 
 rake db:migrate
 
-### Run install script
-
-rails generate contenteditable:install
 
 ### Use in views
 
